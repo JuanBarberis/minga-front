@@ -13,9 +13,11 @@
   
 }
 .hero{
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
+.conteiner-hero2{
+  height: 100vh;
+}
