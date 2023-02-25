@@ -1,0 +1,94 @@
+@media (max-width:900px) {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+    
+   
+    .divBoton {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        background-image: url(../../assets/image/backgrounnaruto.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo-explore {
+        width: 90vw;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+        line-height:38.07px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #ffffff;
+    }
+
+    .subtitilo-explore {
+        width: 90vw;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height:19.04px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hashtag {
+        display: none;
+    }
+
+    .cajaboton {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .buton-explore {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        height: 55px;
+        background: linear-gradient(153.39deg, #f9a8d4 -13.9%, #f472b6 58.69%);
+        margin-top: 10px;
+        border-radius: 50000px;
+        border: none
+
+    }
+    .explore {
+        width: 90vw;
+        height: 23px;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height:19.04px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+      }
+
+}
+
+@media (min-width:901px) {
+    .divBoton {
+        display: none;
+    }
+}
