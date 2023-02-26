@@ -12,6 +12,7 @@ export default function Form() {
                 <h5 className='tex-form'>Discover manga, manhua and manhwa, track your progress, have fun, read manga.</h5>
 
                 <fieldset>
+                    <p className='prueba'>H</p>
                     <legend>
                         Name
                     </legend>
@@ -46,13 +47,15 @@ export default function Form() {
                         <input type="password" id='confirm-password' required />
                     </label>
                 </fieldset>
-                
-                <label htmlFor="notification" className='checkbox-form'>Send notification to my email
-                    <input type="checkbox" id='notification' />
-                </label>
-                
+
+                <div className='prueba2'>
+                        <input type="checkbox" id='notification' />
+                    <label htmlFor="notification" className='checkbox-form'>Send notification to my email
+                    </label>
+                </div>
+
                 <input type="submit" className='button-form' value="Sing up" />
-                
+
                 <button className='button-form-google'><img src={require('../../assets/image/Google.png')} className='google' alt="icono-google" /> Sing in whit google </button>
                 <p>Already have an account <a href="#" className='anchor-form'>Log in</a></p>
                 <p>Go back to <a href="#" className='anchor-form'>Home page</a></p>

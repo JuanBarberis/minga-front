@@ -134,6 +134,18 @@ legend {
     height: 24px;
 }
 
+.prueba {
+    float: right;
+}
+
+.prueba2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
 @media (max-width:800px) {
     .imagenformulario {
         display: none;
