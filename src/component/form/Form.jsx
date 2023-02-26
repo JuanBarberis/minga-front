@@ -42,7 +42,7 @@ export default function Form() {
                     <img src={IconoLock} className='icono-ar' alt="" />
 
                     <legend>
-                        Password.
+                        Password
                     </legend>
                     <label htmlFor="password">
                         <input className='input-form' type="password" id='password' placeholder='*******' required />
