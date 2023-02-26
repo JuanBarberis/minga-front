@@ -22,6 +22,7 @@
 .imagenformulario {
     background-image: url(../../assets/image/img-form.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     width: 50%;
     height: 100%;
@@ -64,22 +65,27 @@
 }
 
 
-input {
+.input-form {
     border: none;
-    width: 40%;
+    width: 280px;
+    height: 20px;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 15px;
     color: #1F1F1F;
     outline: none;
+    margin-left: 10px;
+    
 
 }
 
 fieldset {
-    width: 60%;
+    width: 50%;
     height: 48px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
 
 }
 
@@ -88,21 +94,25 @@ legend {
     text-align: left;
     margin-left: 20px;
 }
-
-/* .checkbox-form{
-    
-    width: 600px;
-    height: 48px;
+.checkbox-conteiner{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: ;
     align-items: center;
-} */
+    justify-content:flex-start ;
+    width: 60%;
+    height: 30px;
+ 
+}
+.input-check{
+    width: 20px;
+    margin-right: 15px;
+}
+
 .button-form {
     background: linear-gradient(153.39deg, #F9A8D4 -13.9%, #F472B6 58.69%);
     padding: 0 7px 0 7px;
-    width: 60%;
-    height: 48px;
+    border: none;
+    width: 63%;
+    height: 40px;
     border-radius: 10px;
     color: white;
     font-family: "Monserrat", sans-serif;
@@ -113,8 +123,8 @@ legend {
 }
 
 .button-form-google {
-    width: 60%;
-    height: 48px;
+    width: 63%;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,17 +144,14 @@ legend {
     height: 24px;
 }
 
-.prueba {
+.icono-ar {
+    width: 20px;
+    height: 20px;
     float: right;
+    margin-right: 5px;
 }
 
-.prueba2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 60%;
-}
+
 
 @media (max-width:800px) {
     .imagenformulario {

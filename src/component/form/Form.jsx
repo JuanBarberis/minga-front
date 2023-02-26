@@ -1,5 +1,11 @@
 import React from 'react'
 import './form.css'
+import Google from '../../assets/image/Google.png'
+import IconoAr from '../../assets/image/ico-ar.png'
+import IconoLock from '../../assets/image/ico-lock.png'
+import IconoProfile from '../../assets/image/ico-profile.png'
+
+
 
 export default function Form() {
     return (
@@ -12,51 +18,57 @@ export default function Form() {
                 <h5 className='tex-form'>Discover manga, manhua and manhwa, track your progress, have fun, read manga.</h5>
 
                 <fieldset>
-                    <p className='prueba'>H</p>
+                    <img src={IconoProfile} className='icono-ar' alt="" />
+
                     <legend>
                         Name
                     </legend>
                     <label htmlFor="name">
-                        <input type="text" id='name' required />
+                        <input className='input-form' type="text" id='name' placeholder='Krowl Bell' required />
                     </label>
                 </fieldset>
 
                 <fieldset>
+                    <img src={IconoAr} className='icono-ar' alt="" />
                     <legend>
                         Email
                     </legend>
                     <label htmlFor="email">
-                        <input type="email" id='email' required />
+                        <input className='input-form' type="email" id='email' placeholder='DragonballZ@Krowl.com' required />
                     </label>
                 </fieldset>
 
                 <fieldset>
+                    <img src={IconoLock} className='icono-ar' alt="" />
+
                     <legend>
                         Password
                     </legend>
                     <label htmlFor="password">
-                        <input type="password" id='password' required />
+                        <input className='input-form' type="password" id='password' placeholder='*******' required />
                     </label>
                 </fieldset>
 
                 <fieldset>
+                    <img src={IconoLock} className='icono-ar' alt="" />
+
                     <legend>
                         Confirm password
                     </legend>
                     <label htmlFor="confirm-password">
-                        <input type="password" id='confirm-password' required />
+                        <input className='input-form' type="password" id='confirm-password' placeholder='*******' required />
                     </label>
                 </fieldset>
 
-                <div className='prueba2'>
-                        <input type="checkbox" id='notification' />
-                    <label htmlFor="notification" className='checkbox-form'>Send notification to my email
+                <div className='checkbox-conteiner'>
+                    <input className='input-check' type="checkbox" id='notification' />
+                    <label htmlFor="notification" >Send notification to my email
                     </label>
                 </div>
 
                 <input type="submit" className='button-form' value="Sing up" />
 
-                <button className='button-form-google'><img src={require('../../assets/image/Google.png')} className='google' alt="icono-google" /> Sing in whit google </button>
+                <button className='button-form-google'><img src={Google} className='google' alt="icono-google" /> Sing in whit google </button>
                 <p>Already have an account <a href="#" className='anchor-form'>Log in</a></p>
                 <p>Go back to <a href="#" className='anchor-form'>Home page</a></p>
             </form>
