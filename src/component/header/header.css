@@ -1,4 +1,4 @@
-nav {
+.header{
     width: 100%;
     position: absolute;
     min-height: 10vh;
@@ -10,7 +10,7 @@ nav {
     margin-bottom: 5px;
 }
 
-.nav-home {
+.home-header {
     width: 100%;
     display: flex;
     align-items: center;
@@ -68,3 +68,5 @@ nav {
      display: none;
     }
  } */
+
+

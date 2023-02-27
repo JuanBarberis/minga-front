@@ -4,7 +4,7 @@ import Background from '../background/Background'
 import Divboton from '../divBoton/Divboton'
 import Form from '../form/Form'
 import Hero1 from '../hero1/Hero1'
-import NavBar from '../navbar/NavBar'
+import Footer from '../footer/Footer'
 
 
 
@@ -12,7 +12,7 @@ export default function Index() {
     return (
         <>
             <div className='home'>
-                <NavBar />
+
                 <div className='hero'>
                     <Hero1 />
                     <Background />
@@ -20,8 +20,11 @@ export default function Index() {
                 </div>
                 <div className='conteiner-hero2'>
                     <Form />
+                    <Footer />
                 </div>
             </div>
+
+
         </>
 
     )
