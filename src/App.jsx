@@ -11,11 +11,11 @@ function App() {
   return (
 
     <div className='home'>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className='hero'>
-        <Hero1 />
+        {/* <Hero1 />
         <Background />
-        <Divboton />
+        <Divboton /> */}
       </div>
       <div className='conteiner-hero2'>
       <Form />
