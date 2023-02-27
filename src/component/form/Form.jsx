@@ -32,12 +32,12 @@ export default function Form() {
         let url = 'http://localhost:8080/users'
         try {
           await  axios.post(url,data)
+          form.reset()
         } catch (error){
             console.log(error)
             console.log('ocurrio un error')
             
         }
-        form.reset()
     }
 
     return (
