@@ -12,42 +12,26 @@ export default function Form() {
     let name = useRef()
     let email = useRef()
     let password = useRef()
-    let confirmpassword = useRef()
-    let confirmEmail = useRef()
     let submit = useRef()
 
-
+    
     async function handleSubmit(event) {
         event.preventDefault()
-        // console.log(name.current.value)
-        // console.log(name.current.name)
-
-        // console.log(email.current.value)
-        // console.log(email.current.name)
-
-        // console.log(password.current.value)
-        // console.log(password.current.name)
-
-        // console.log(confirmpassword.current.value)
-        // console.log(confirmpassword.current.name)
         
 
         let data = {
             [name.current.name]: name.current.value,
             [email.current.name]: email.current.value,
             [password.current.name]: password.current.value,
-            [confirmpassword.current.name]: confirmpassword.current.value,
-            [submit.current.name]: submit.current.value,
+          
 
 
         }
         console.log(data)
         let url = 'http://localhost:8080/users'
         try {
-          await  axios.post(
-                url,
-                data
-            )
+          await  axios.post(url,data)
+            
         } catch (error){
             console.log(error)
             console.log('ocurrio un error')
@@ -100,12 +84,12 @@ export default function Form() {
                         Confirm password
                     </legend>
                     <label htmlFor="confirm-password">
-                        <input ref={confirmpassword} className='input-form' type="password" id='confirm-password' name='confirm-password' placeholder='*******' required />
+                        <input  className='input-form' type="password" id='confirm-password' name='confirm-password' placeholder='*******' required />
                     </label>
                 </fieldset>
 
                 <div className='checkbox-conteiner'>
-                    <input ref={confirmEmail} className='input-check' type="checkbox" id='notification' name='confirmEmail' />
+                    <input  className='input-check' type="checkbox" id='notification' name='confirmEmail' />
                     <label htmlFor="notification" >Send notification to my email
                     </label>
                 </div>
