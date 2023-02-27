@@ -12,7 +12,8 @@ export default function Form() {
     let name = useRef()
     let email = useRef()
     let password = useRef()
-    let submit = useRef()
+    
+    let form= document.querySelector("form")
 
     
     async function handleSubmit(event) {
@@ -31,12 +32,12 @@ export default function Form() {
         let url = 'http://localhost:8080/users'
         try {
           await  axios.post(url,data)
-            
         } catch (error){
             console.log(error)
             console.log('ocurrio un error')
-
+            
         }
+        form.reset()
     }
 
     return (
@@ -94,7 +95,7 @@ export default function Form() {
                     </label>
                 </div>
 
-                <input ref={submit} type="submit" className='button-form' value="Sing up" name='submit' />
+                <input type="submit" className='button-form' value="Sing up" name='submit' />
 
                 <button className='button-form-google'><img src={Google} className='google' alt="icono-google" /> Sing in whit google </button>
                 <p>Already have an account <a href="#" className='anchor-form'>Log in</a></p>
