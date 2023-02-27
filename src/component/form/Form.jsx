@@ -28,7 +28,7 @@ export default function Form() {
 
 
         }
-        console.log(data)
+       
         let url = 'http://localhost:8080/users'
         try {
           await  axios.post(url,data)
